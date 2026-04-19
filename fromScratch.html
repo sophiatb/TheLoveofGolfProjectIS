@@ -2,101 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Love of Golf</title>
-    <style>
-        /* This is your direct CSS styling */
-        body {
-            background-color: #fdf5e6; /* Pastel Background */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #2e4a31;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header-box {
-            background-color: #a8d5ba; /* Pastel Green */
-            padding: 40px;
-            text-align: center;
-            border-bottom: 5px solid #8fb99b;
-        }
-
-        .content-container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-
-        .video-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 30px 0;
-        }
-
-        h1, h2 {
-            color: #2e5a27;
-        }
-
-        .back-to-top {
-            display: block;
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            text-decoration: none;
-            color: #8fb99b;
-            font-weight: bold;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf</title>
+    <link rel="stylesheet" type="text/css" href="css/myStyles.css">
 </head>
-<body id="top"> <div class="header-box">
-        <h1>The Love of Golf</h1>
-        <nav>
-            <a href="index.html">Professional Page</a> | 
-            <a href="ai.html">Wordle Game</a>
-        </nav>
+<body>
+    <nav class="main-nav">
+    <ul>
+        <li><a href="index.html">Resume</a></li>
+        <li><a href="wordle.html">Wordle Game</a></li>
+        <li><a href="fromScratch.html">Golf Page</a></li>
+    </ul>
+</nav>
+    <header style="background-image: url(https://quintessentially.com/assets/noted/HEADER_2025-04-03-084608_fskw.webp)"></header>
+    <h1>The Love of Golf</h1>
+    <br> 
+    <a href="#golf-shots">Click here to see the best shots!</a>
+    <br>
+    <h2>My Favorite Golf Courses</h2>
+    <ul>
+        <li>Sand Hollow Golf Course</li>
+        <img src="https://sandhollowresort.com/wp-content/uploads/2025/01/champion-1.png" alt="Sand Hollow Image" width="300">
+        
+        <li>Riverside Country Club</li>
+        <img src="https://media.licdn.com/dms/image/v2/D5622AQGMZI4z17rq9g/feedshare-shrink_800/B56ZpWO3TGJoAg-/0/1762383331194?e=2147483647&v=beta&t=HTLQCF2aU1WRjphdnZZDsSLz62KrZKA8_OlFHtNV-yI" alt="Riverside Image" width="300">
+        
+        <li>Wolf Creek Resort</li>
+        <img src="https://wolfcreekresort.com/2021/wp-content/uploads/2021/10/Wolf-Creek-Resort-Utah-Golf.jpg" alt="Wolf Creek" width="300">
+    </ul>
+    <h2 id="golf-shots">Top 10 Best Golf Shots Of All Time</h2>
+<div class="Video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7e2areZlw_M" title="Top 10 Greatest Golf Shots Of All Time" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+<section id="stats-section">
+    <h2>Golf Performance Analytics</h2>
+    
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    
+    <div class="tableau-viz-container">
+        <tableau-viz id="tableauViz" 
+            src="https://public.tableau.com/views/GolfDashboard/GolfDash" 
+            toolbar="bottom" 
+            hide-tabs>
+        </tableau-viz>
     </div>
-
-    <div class="content-container">
-        <h2>Why I Love the Game</h2>
-        <p>Golf is more than just a sport; it's a way to enjoy the outdoors and challenge yourself.</p>
-
-        <h3>My Favorite Locations</h3>
-        <ol>
-            <li>Utah Courses
-                <ul>
-                    <li>Sand Hollow Resort</li>
-                    <li>Riverside Country Club</li>
-                    <li>Wolf Creek Resort</li>
-                </ul>
-            </li>
-            <li>Dream Trips
-                <ul>
-                    <li>Augusta National</li>
-                    <li>St. Andrews</li>
-                </ul>
-            </li>
-        </ol>
-
-        <div class="image-section">
-            <img src="IMG_6999.jpeg" alt="Golfing in Utah" style="width:100%; border-radius:10px;">
-        </div>
-
-        <div class="video-section">
-            <h3>Top 10 Golf Shots</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7e2areZlw_M" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-        <div class="tableau-section">
-            <h3>Performance Analytics</h3>
-            <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
-            <tableau-viz id="tableauViz" src="https://public.tableau.com/views/GolfDashboard/GolfDash" toolbar="bottom" hide-tabs></tableau-viz>
-        </div>
-
-        <a href="#top" class="back-to-top">Back to Top</a>
-    </div>
-
+</section>
 </body>
 </html>
